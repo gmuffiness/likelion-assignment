@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      li { list-style: none }
+    </style>
+    <meta charset="utf-8">
+    <title>웹 폼</title>
+  </head>
+  <body>
+    <h1>멋사 수강 신청</h1>
+    <form>
+      <fieldset>
+        <legend><span style= "font-weight: bold;">수강 과목</legend>
+          <ul>
+            <li>
+              <label><span style='color:green; font-weight: bold;'>HTML5+CSS3</span></label>
+              <input type="text" value="오전 9:00~11:00" readonly>
+            </li>
+          </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend><span style= "font-weight: bold;">신청자</legend>
+          <ul>
+            <li>
+              <label><span style='color:green; font-weight: bold;'>이름</span></label>
+              <input type="text" autofocus required>
+            </li>
+            <li>
+              <label><span style='color:green; font-weight: bold;'>학번</span></label>
+              <input type="text" placeholder="하이픈없이 입력">
+            </li>
+            <li>
+              <label><span style='color:green; font-weight: bold;'>학과</span></label>
+              <select name="학과">
+                <option>컴퓨터공학과</option>
+                <option>산업공학과</option>
+                <option>경영학과</option>
+              </select>
+            </li>
+          </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend><span style= "font-weight: bold;">교재 주문</legend>
+          <ul>
+            <li>
+              <label><span style='color:green; font-weight: bold;'>교재</span></label>
+              <input type="number" min='0'>
+            </li>
+            <li>
+              <label><span style='color:green; font-weight: bold;'>워크시트</span></label>
+              <input type="number" min='0'>
+            </li>
+            <li>
+              <label><span style='color:green; font-weight: bold;'>단체주문</span></label>
+              <input type="number" min='10' max='100' step='10'>
+            </li>
+          </ul>
+      </fieldset>
+        <p>  </p>
+      <fieldset>
+        <input type="submit" value='신청하기'>
+        <input type="submit" value='다시쓰기'>
+      </fieldset>
+    </form>
+  </body>
+</html>
