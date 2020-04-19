@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>웹 폼</title>
+    <style>
+      ul{
+      list-style: none;
+      text-indent: 30px;
+      line-height: 3em;
+      }
+      .first{
+        text-indent: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>멋사 수강 신청</h1>
+    <form class="">
+      <fieldset>
+        <legend><span style= "font-weight: bold;">수강 신청인</legend>
+          <ul>
+            <li class = "first">
+              <label><span style='color:green; font-weight: bold;'>대학교</span></label>
+              <input type="text" autofocus required>
+            </li>
+            <li>
+              <label><span style='color:green; font-weight: bold;'>이름</span></label>
+              <input type="text"">
+            </li>
+            <li>
+              <label><span style='color:green; font-weight: bold;'>학과</span></label>
+              <select name="학과">
+                <optgroup label="공과대학">
+                  <option>건축공학과</option>
+                  <option>기계공학과</option>
+                  <option>산업공학과</option>
+                  <option>전기전자공학과</option>
+                  <option>컴퓨터공학과</option>
+                  <option>화학공학과</option>
+                </optgroup>
+                <optgroup label="인문대학">
+                  <option>사학과</option>
+                  <option>어문학부</option>
+                  <option>철학과</option>
+                </optgroup>
+
+              </select>
+            </li>
+          </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>
